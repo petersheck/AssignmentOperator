@@ -1,7 +1,7 @@
 /*
  * CMyString.hpp
  *
- *  Created on: Jan 14, 2019
+ *  Created on: January 14, 2019
  *      Author: petersheck
  */
 
@@ -13,11 +13,15 @@
 class CMyString
 {
 public:
+    // Constructors
     CMyString();
     CMyString(char* pData);
     CMyString(const CMyString& other);
+    // Destructors
     virtual ~CMyString();
+    // Assignment
     CMyString& operator=(const CMyString& other);
+    // Accessors
     char* getMyString() const;
 private:
     char* m_pData;

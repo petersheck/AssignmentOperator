@@ -1,7 +1,7 @@
 /*
  * CMyString.cpp
  *
- *  Created on: Jan 14, 2019
+ *  Created on: January 14, 2019
  *      Author: petersheck
  */
 #include <cstddef>
@@ -9,12 +9,14 @@
 #include <cstring>
 #include "CMyString.hpp"
 
+// Default Constructor
 CMyString::CMyString()
 {
     std::cout << "Default Construct" << std::endl;
     m_pData = NULL;
 }
 
+// Constructor
 CMyString::CMyString(char* pData)
 {
     std::cout << "Construct" << std::endl;
@@ -22,6 +24,7 @@ CMyString::CMyString(char* pData)
     strcpy(m_pData, pData);
 }
 
+// Copy Constructor
 CMyString::CMyString(const CMyString& other)
 {
     std::cout << "Copy Construct" << std::endl;
@@ -29,6 +32,7 @@ CMyString::CMyString(const CMyString& other)
     strcpy(m_pData, other.m_pData);
 }
 
+// Assignment Operator
 CMyString& CMyString::operator=(const CMyString& other)
 {
     std::cout << "Assignment" << std::endl;
@@ -44,6 +48,7 @@ CMyString& CMyString::operator=(const CMyString& other)
     return *this;
 }
 
+// Default Destructor
 CMyString::~CMyString()
 {
     std::cout << "Destructor" << std::endl;
