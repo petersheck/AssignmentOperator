@@ -12,8 +12,8 @@
 using namespace std;
 
 int main() {
-    char pData[100] = "Hi";
-    CMyString a(pData);
+    char buffer[100] = "Hello World";
+    CMyString a(buffer);
     CMyString b(a);
     CMyString c;
     c = b;
