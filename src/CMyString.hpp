@@ -14,16 +14,19 @@ class CMyString
 {
 public:
     // Constructors
-    CMyString();
-    CMyString(char* pData);
-    CMyString(const CMyString& other);
+    CMyString(); // Default
+    CMyString(char* pData); // Custom
+    CMyString(const CMyString& other); // Copy
+    CMyString(CMyString&& other); // Move
     // Destructors
     virtual ~CMyString();
-    // Assignment
-    CMyString& operator=(const CMyString& other);
+    // Assignments
+    CMyString& operator=(const CMyString& other); // Copy
+    CMyString& operator=(CMyString&& other); // Move
     // Accessors
     char* getMyString() const;
 private:
+    void freeMemory();
     char* m_pData;
 };
 
