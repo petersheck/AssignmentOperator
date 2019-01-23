@@ -1,9 +1,9 @@
 //============================================================================
 // Name        : AssignmentOperator.cpp
 // Author      : Peter Heck
-// Version     :
-// Copyright   : 2018
-// Description : Hello World in C++, Ansi-style
+// Version     : 1.0
+// Copyright   : 2019
+// Description : C++ Constructors and Assignment Study
 //============================================================================
 
 #include <iostream>
